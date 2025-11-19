@@ -35,21 +35,6 @@ const steps = [
   },
 ];
 
-const benefits = [
-  {
-    label: "Save time & avoid guesswork",
-    copy: "We do the LinkedIn sweep for you and discard noise so you only see roles that match your skills, level, and location filters.",
-  },
-  {
-    label: "Increase interview invites",
-    copy: "A professionally refined CV highlights measurable wins and speaks the language recruiters search for.",
-  },
-  {
-    label: "Fast delivery window",
-    copy: "Receive your refreshed CV plus 25 active job opportunities within 24–72 hours once payment is confirmed.",
-  },
-];
-
 const faqs = [
   {
     question: "What exactly does this service provide?",
