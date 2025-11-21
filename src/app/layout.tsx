@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Match Your Skills | CV Automation Concierge",
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#f8fafc] text-slate-900 antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   );
