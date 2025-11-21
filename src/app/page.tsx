@@ -156,9 +156,6 @@ export default function HomePage() {
             >
               How it works
             </a>
-            <a href="#pricing" className="transition hover:text-primary-300">
-              Pricing
-            </a>
             <a
               href={leadFormUrl}
               target="_blank"
@@ -201,7 +198,7 @@ export default function HomePage() {
               Try our platform today!
             </h2>
             <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-300">
-              Lend More Interview with 25+ Customized CVs for Each Job Posting
+              Land More Interview with 25+ Customized CVs for Each Job Posting
               from ₦20,000
             </p>
             <div className="mt-8 flex justify-center">
