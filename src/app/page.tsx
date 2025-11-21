@@ -140,14 +140,16 @@ export default function HomePage() {
       >
         <div className="flex w-full items-center justify-between px-6 py-5 sm:px-10 lg:px-16">
           <a href="#top" className="flex items-center">
-            <Image
-              src="/images/matchyourskills_logo.png"
-              width={160}
-              height={48}
-              alt="Match Your Skills logo"
-              priority
-              className="h-12 w-auto object-contain"
-            />
+            <div className="relative h-10 w-32 sm:h-12 sm:w-44">
+              <Image
+                src="/images/logo_white.png"
+                alt="Match Your Skills logo"
+                priority
+                fill
+                className="object-contain"
+                sizes="(max-width: 640px) 8rem, 11rem"
+              />
+            </div>
           </a>
           <nav className="hidden items-center gap-6 text-sm font-semibold text-slate-200 sm:flex">
             <a
@@ -282,13 +284,15 @@ export default function HomePage() {
       <footer className="border-t border-white/10 bg-slate-950/80 backdrop-blur-xl">
         <div className="flex w-full flex-col gap-6 px-6 py-10 text-slate-300 sm:flex-row sm:items-center sm:justify-between sm:px-10 lg:px-16">
           <a href="#top" className="flex items-center">
-            <Image
-              src="/images/matchyourskills_logo.png"
-              width={180}
-              height={54}
-              alt="Match Your Skills logo"
-              className="h-12 w-auto object-contain"
-            />
+            <div className="relative h-10 w-32 sm:h-12 sm:w-44">
+              <Image
+                src="/images/logo_white.png"
+                alt="Match Your Skills logo"
+                fill
+                className="object-contain"
+                sizes="(max-width: 640px) 8rem, 11rem"
+              />
+            </div>
           </a>
           <div className="flex flex-col gap-2 text-sm sm:text-right">
             <div className="flex flex-wrap gap-4 sm:justify-end">
