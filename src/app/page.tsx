@@ -111,7 +111,7 @@ export default function HomePage() {
   const currentYear = new Date().getFullYear();
   const leadFormUrl =
     "https://faseni.app.n8n.cloud/form/a921a37b-377c-4870-b900-66bcb6006815";
-  const supportEmail = "support@matchyourskills.dev";
+  const supportEmail = "dafwaysystems@gmail.com";
 
   const closeModal = () => {
     setActiveModal(null);
@@ -173,7 +173,7 @@ export default function HomePage() {
         <div className="flex w-full flex-col gap-20 px-4 py-16 sm:px-12">
           <HeroSection
             className="border border-white/10 bg-slate-900/60 shadow-[0_30px_120px_rgba(2,6,23,0.6)]"
-            title="MatchYourSkills.Dev"
+            title="MatchMySkills.Dev"
             subtitle={{
               regular: "Get matched with the right jobs",
               gradient: "fast.",
