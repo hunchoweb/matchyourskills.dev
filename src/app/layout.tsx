@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: `${baseUrl}/images/matchyourskills_logo.jpg`,
-        width: 1200,
-        height: 630,
+        width: 1068,
+        height: 1068,
         alt: "Match Your Skills Logo",
       },
     ],
@@ -40,7 +40,14 @@ export const metadata: Metadata = {
     title: "Match Your Skills | CV Automation Concierge",
     description:
       "Hand off your CV once. Our automation finds matching roles, tunes your profile, and sends personalized submissions straight to your inbox.",
-    images: [`${baseUrl}/images/matchyourskills_logo.jpg`],
+    images: [
+      {
+        url: `${baseUrl}/images/matchyourskills_logo.jpg`,
+        width: 1068,
+        height: 1068,
+        alt: "Match Your Skills Logo",
+      },
+    ],
   },
 };
 
