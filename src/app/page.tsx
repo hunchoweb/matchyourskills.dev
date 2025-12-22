@@ -107,7 +107,7 @@ export default function HomePage() {
   const [activeModal, setActiveModal] = useState<"privacy" | "contact" | null>(
     null
   );
-  const [copied, setCopied] = useState(false);
+
   const currentYear = new Date().getFullYear();
   const leadFormUrl =
     "https://dafwaysystems.app.n8n.cloud/form/a921a37b-377c-4870-b900-66bcb6006815";
@@ -115,17 +115,6 @@ export default function HomePage() {
 
   const closeModal = () => {
     setActiveModal(null);
-    setCopied(false);
-  };
-
-  const handleCopyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(supportEmail);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch (error) {
-      console.error("Failed to copy email", error);
-    }
   };
 
   const openLeadForm = () => {
@@ -364,13 +353,7 @@ export default function HomePage() {
               </div>
             ) : (
               <div className="mt-6 space-y-4 text-center">
-                {/* <button
-                  type="button"
-                  onClick={handleCopyEmail}
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-2 text-xs font-semibold uppercase tracking-[0.4em] text-white/80 transition hover:border-primary-300 hover:text-white"
-                >
-                  {copied ? "Copied!" : "Click to copy"}
-                </button> */}
+
                 <a
                   href={`mailto:${supportEmail}`}
                   className="block rounded-2xl border border-primary-400/30 bg-primary-500/5 px-6 py-4 text-xl font-semibold text-white shadow-[0_10px_40px_rgba(14,165,233,0.25)] hover:border-primary-300"
